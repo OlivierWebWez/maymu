@@ -6,13 +6,13 @@ import { Twitter, MessageCircle, Users, Heart, TrendingUp, Star } from "lucide-r
 
 export default function CommunitySection() {
   const socialStats = [
-    {
-      platform: "Twitter",
-      icon: Twitter,
-      handle: "@MaymoPackHQ",
-      color: "hover:bg-white/20 text-slate-800",
-      link: "#"
-    },
+    // {
+    //   platform: "Twitter",
+    //   icon: Twitter,
+    //   handle: "@MaymoPackHQ",
+    //   color: "hover:bg-white/20 text-slate-800",
+    //   link: "#"
+    // },
     {
       platform: "Telegram", 
       icon: MessageCircle,
@@ -20,13 +20,13 @@ export default function CommunitySection() {
       color: "hover:bg-white/20 text-slate-800",
       link: "#"
     },
-    {
-      platform: "Discord",
-      icon: Users,
-      handle: "Elite Barracks",
-      color: "hover:bg-white/20 text-slate-800",
-      link: "#"
-    }
+    // {
+    //   platform: "Discord",
+    //   icon: Users,
+    //   handle: "Elite Barracks",
+    //   color: "hover:bg-white/20 text-slate-800",
+    //   link: "#"
+    // }
   ];
 
   const communityFeatures = [
@@ -48,7 +48,7 @@ export default function CommunitySection() {
   ];
 
   return (
-    <section className="py-20 px-4">
+    <section id="community" className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -110,34 +110,34 @@ export default function CommunitySection() {
         </div>
 
         {/* Community spotlight - NO CARD! */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="rounded-3xl border border-slate-300 bg-white/30 backdrop-blur-sm p-12 shadow-2xl text-center"
-        >
-            <div className="text-6xl mb-6 animate-bounce">⚔️</div>
-            <h3 className="text-4xl font-bold mb-6 text-slate-900">Ready for Combat?</h3>
-            <p className="text-xl mb-8 text-slate-700 max-w-2xl mx-auto">
-              The pack needs recruits. Think you can handle sharks in sneakers and zombie invasions? Prove it.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg"
-                className="bg-slate-900 text-white hover:bg-slate-800 font-bold px-8 py-4"
-              >
-                Report for Duty
-              </Button>
-              <Button 
-                size="lg"
-                variant="outline"
-                className="border-slate-700 text-slate-800 hover:bg-slate-700 hover:text-white px-8 py-4"
-              >
-                Follow Mission Updates
-              </Button>
-            </div>
-        </motion.div>
+        {/*<motion.div*/}
+        {/*  initial={{ opacity: 0, scale: 0.9 }}*/}
+        {/*  whileInView={{ opacity: 1, scale: 1 }}*/}
+        {/*  transition={{ duration: 0.8 }}*/}
+        {/*  viewport={{ once: true }}*/}
+        {/*  className="rounded-3xl border border-slate-300 bg-white/30 backdrop-blur-sm p-12 shadow-2xl text-center"*/}
+        {/*>*/}
+        {/*    <div className="text-6xl mb-6 animate-bounce">⚔️</div>*/}
+        {/*    <h3 className="text-4xl font-bold mb-6 text-slate-900">Ready for Combat?</h3>*/}
+        {/*    <p className="text-xl mb-8 text-slate-700 max-w-2xl mx-auto">*/}
+        {/*      The pack needs recruits. Think you can handle sharks in sneakers and zombie invasions? Prove it.*/}
+        {/*    </p>*/}
+        {/*    <div className="flex flex-col sm:flex-row gap-4 justify-center">*/}
+        {/*      <Button */}
+        {/*        size="lg"*/}
+        {/*        className="bg-slate-900 text-white hover:bg-slate-800 font-bold px-8 py-4"*/}
+        {/*      >*/}
+        {/*        Report for Duty*/}
+        {/*      </Button>*/}
+        {/*      <Button */}
+        {/*        size="lg"*/}
+        {/*        variant="outline"*/}
+        {/*        className="border-slate-700 text-slate-800 hover:bg-slate-700 hover:text-white px-8 py-4"*/}
+        {/*      >*/}
+        {/*        Follow Mission Updates*/}
+        {/*      </Button>*/}
+        {/*    </div>*/}
+        {/*</motion.div>*/}
       </div>
     </section>
   );

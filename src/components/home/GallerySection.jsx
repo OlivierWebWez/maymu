@@ -5,37 +5,27 @@ import { Button } from "@/components/ui/button";
 import { Play, ExternalLink, Heart } from "lucide-react";
 
 export default function GallerySection() {
-  const galleryItems = [
+const galleryItems = [
     {
       type: "video",
       thumbnail: "https://img.youtube.com/vi/3Ut6pkqVMcQ/hqdefault.jpg",
-      title: "Epic Ball Pit Battle Royale",
+      title: "Dogs Find Shark in Sneakers in Woods",
       link: "https://youtu.be/3Ut6pkqVMcQ?si=X3foynPNeeyAoY2g",
-      views: "15M+ views",
-      description: "Maymo vs 1000 ball pit balls in the ultimate showdown"
+      views: "200K+ views",
     },
     {
       type: "video",
       thumbnail: "https://img.youtube.com/vi/qpI_ehXelxA/hqdefault.jpg",
-      title: "The Great Lemon Wars",
+      title: "Cute Dogs Knocking People Out Vol. V",
       link: "https://youtu.be/qpI_ehXelxA?si=-HKmoc-0Kn6W8mUY",
-      views: "10M+ views",
-      description: "Historic footage of the pack's victory over citrus enemies"
+      views: "80K+ views",
     },
     {
       type: "video",
       thumbnail: "https://img.youtube.com/vi/3ufaSiB1KDM/hqdefault.jpg",
-      title: "Balance Master Training",
+      title: "Dogs Find John Pork in Creepy Barn!",
       link: "https://youtu.be/3ufaSiB1KDM?si=PyEfBE6EAL58dfOV",
-      views: "2M+ views",
-      description: "Advanced combat agility techniques demonstrated"
-    },
-    {
-      type: "video",
-      thumbnail: "https://img.youtube.com/vi/O_Fp3bi832s/hqdefault.jpg",
-      title: "Ghost Hunter Chronicles",
-      views: "Supernatural Specialist",
-      description: "When spirits meet their match"
+      views: "1.4M+ views",
     }
   ];
 

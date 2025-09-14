@@ -7,7 +7,7 @@ import { Copy, CheckCircle, Wallet, ArrowRight, Shield, Zap } from "lucide-react
 
 export default function HowToBuySection() {
   const [copied, setCopied] = useState(false);
-  const contractAddress = "Coming Soon";
+  const contractAddress = "9NBPWsCCRUbD7iQaZSCnx1uuwySrHooozb7k3mrRpump";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(contractAddress);

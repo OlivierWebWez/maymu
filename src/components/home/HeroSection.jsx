@@ -24,7 +24,7 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
       {/* Hero background glow */}
-      <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-amber-400/10 to-slate-400/5 blur-3xl"></div>
+      <div className="absolute inset-0  blur-3xl"></div>
       
       <motion.div 
         variants={containerVariants}
@@ -112,6 +112,7 @@ export default function HeroSection() {
           <Button 
             size="lg" 
             className="bg-slate-900 hover:bg-slate-800 text-white font-bold px-8 py-4 text-lg rounded-full shadow-xl transform transition-all duration-200 hover:scale-105"
+            onClick={() => document.getElementById('community').scrollIntoView({ behavior: 'smooth' })}
           >
             Join the Pack
           </Button>

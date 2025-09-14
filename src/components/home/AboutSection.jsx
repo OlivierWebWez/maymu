@@ -95,9 +95,7 @@ export default function AboutSection() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full flex items-center justify-center shadow-xl animate-bounce">
-                <span className="text-2xl">🤣</span>
-              </div>
+             
             </motion.div>
             <div>
               <h3 className="text-4xl font-bold text-slate-900 mb-6">
