@@ -52,15 +52,19 @@ const galleryItems = [
             Witness the legendary adventures of the pack. From shark encounters to zombie battles, 
             these are the epic moments that made internet history.
           </p>
-          <Button 
-            size="lg"
-            variant="outline"
-            className="border-2 border-slate-700 text-slate-800 hover:bg-slate-700 hover:text-white backdrop-blur-sm"
+
+            <Button
+                size="lg"
+                variant="outline"
+                className="bg-pink-500 text-white font-bold px-6 py-3 rounded-xl
+  shadow-lg hover:scale-110 hover:rotate-2 transition-all duration-200 hover:bg-white hover:text-pink-500"
             onClick={() => window.open('https://www.youtube.com/channel/UCC7tqA6lA2QRw4BdrAEKFxg', '_blank')}
-          >
-            <ExternalLink className="w-5 h-5 mr-2" />
-            Watch the Full Chronicles
-          </Button>
+
+
+              >
+                Watch the Full Chronicles
+              </Button>
+
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
