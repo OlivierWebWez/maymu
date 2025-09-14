@@ -1,4 +1,3 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
@@ -10,23 +9,33 @@ export default function GallerySection() {
     {
       type: "video",
       thumbnail: "https://img.youtube.com/vi/3Ut6pkqVMcQ/hqdefault.jpg",
-      title: "Dogs Find Shark in Sneakers in Woods",
+      title: "Epic Ball Pit Battle Royale",
       link: "https://youtu.be/3Ut6pkqVMcQ?si=X3foynPNeeyAoY2g",
-      views: "200K+ views",
+      views: "15M+ views",
+      description: "Maymo vs 1000 ball pit balls in the ultimate showdown"
     },
     {
       type: "video",
       thumbnail: "https://img.youtube.com/vi/qpI_ehXelxA/hqdefault.jpg",
-      title: "Cute Dogs Knocking People Out Vol. V",
+      title: "The Great Lemon Wars",
       link: "https://youtu.be/qpI_ehXelxA?si=-HKmoc-0Kn6W8mUY",
-      views: "80K+ views",
+      views: "10M+ views",
+      description: "Historic footage of the pack's victory over citrus enemies"
     },
     {
       type: "video",
       thumbnail: "https://img.youtube.com/vi/3ufaSiB1KDM/hqdefault.jpg",
-      title: "Dogs Find John Pork in Creepy Barn!",
+      title: "Balance Master Training",
       link: "https://youtu.be/3ufaSiB1KDM?si=PyEfBE6EAL58dfOV",
-      views: "1.4M+ views",
+      views: "2M+ views",
+      description: "Advanced combat agility techniques demonstrated"
+    },
+    {
+      type: "video",
+      thumbnail: "https://img.youtube.com/vi/O_Fp3bi832s/hqdefault.jpg",
+      title: "Ghost Hunter Chronicles",
+      views: "Supernatural Specialist",
+      description: "When spirits meet their match"
     }
   ];
 
@@ -37,7 +46,7 @@ export default function GallerySection() {
   };
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-cyan-50 to-amber-50">
+    <section className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -46,21 +55,21 @@ export default function GallerySection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent mb-6">
-            Maymo Gallery
+          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent mb-6">
+            Battle Archives
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Relive the best moments from Maymo's incredible journey. From viral videos to heartwarming photos, 
-            here's why the internet fell in love with this amazing beagle.
+          <p className="text-xl text-slate-700 max-w-3xl mx-auto mb-8">
+            Witness the legendary adventures of the pack. From shark encounters to zombie battles, 
+            these are the epic moments that made internet history.
           </p>
           <Button 
             size="lg"
             variant="outline"
-            className="border-2 border-cyan-300 hover:border-cyan-400 bg-white/80 backdrop-blur-sm"
+            className="border-2 border-slate-700 text-slate-800 hover:bg-slate-700 hover:text-white backdrop-blur-sm"
             onClick={() => window.open('https://www.youtube.com/channel/UCC7tqA6lA2QRw4BdrAEKFxg', '_blank')}
           >
             <ExternalLink className="w-5 h-5 mr-2" />
-            Visit Maymo's YouTube Channel
+            Watch the Full Chronicles
           </Button>
         </motion.div>
 
@@ -74,7 +83,7 @@ export default function GallerySection() {
               viewport={{ once: true }}
             >
               <Card 
-                className="group overflow-hidden bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                className="group overflow-hidden bg-black/20 backdrop-blur-sm border-white/10 border shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
                 onClick={() => handleCardClick(item)}
               >
                 <div className={`relative aspect-video overflow-hidden ${item.type === 'video' ? 'cursor-pointer' : ''}`}>
@@ -108,11 +117,14 @@ export default function GallerySection() {
                 </div>
                 
                 <CardContent className="p-6">
-                  <h3 className="font-bold text-lg text-gray-900 mb-2 line-clamp-2">
+                  <h3 className="font-bold text-lg text-white mb-2 line-clamp-2">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-slate-300 text-sm mb-2">
                     {item.views || item.likes}
+                  </p>
+                  <p className="text-slate-400 text-xs">
+                    {item.description}
                   </p>
                 </CardContent>
               </Card>
@@ -128,7 +140,22 @@ export default function GallerySection() {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-
+          <div className="bg-white/30 border border-slate-300 backdrop-blur-sm shadow-xl max-w-2xl mx-auto rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                Ready to Join the Pack?
+              </h3>
+              <p className="text-slate-700 mb-6">
+                Share your favorite warrior moments and battle strategies using #MAYMOPACK
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button className="bg-slate-900 text-white hover:bg-slate-800">
+                  Report for Duty
+                </Button>
+                <Button variant="outline" className="border-slate-700 text-slate-800 hover:bg-slate-700 hover:text-white">
+                  Join the Mission
+                </Button>
+              </div>
+          </div>
         </motion.div>
       </div>
     </section>

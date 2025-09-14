@@ -1,7 +1,6 @@
 
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Award, Users, Zap } from "lucide-react";
 
 export default function AboutSection() {
@@ -12,31 +11,31 @@ export default function AboutSection() {
   const features = [
     {
       icon: Heart,
-      title: "Beloved Character",
-      description: "Maymo has captured millions of hearts with his adorable antics and expressive personality across countless YouTube videos."
+      title: "The Elite Squad",
+      description: "Maymo, Penny, Potpie, and Indie - four legendary warriors who've mastered the art of comedic combat."
     },
     {
       icon: Award,
-      title: "Proven Track Record", 
-      description: "Over a decade of entertaining content, viral videos, and a dedicated fanbase that spans the globe."
+      title: "Combat Specialists", 
+      description: "From toilet plungers to cream pies, these dogs wield unconventional weapons with deadly precision."
     },
     {
       icon: Users,
-      title: "Strong Community",
-      description: "A passionate community of dog lovers and crypto enthusiasts united by their love for Maymo."
+      title: "Villain Vanquishers",
+      description: "They've taken down sharks in sneakers, zombies, evil clowns, and other absurd threats to society."
     },
     {
       icon: Zap,
-      title: "Meme Potential",
-      description: "With endless content and memorable moments, Maymo has unlimited meme potential in the crypto space."
+      title: "Chaos Creators",
+      description: "Masters of turning everyday situations into epic adventures filled with mayhem and memes."
     }
   ];
 
   return (
     <section id="about" className="py-20 px-4 relative">
       {/* Background elements */}
-      <motion.div style={{ y: y1 }} className="absolute top-20 right-10 w-32 h-32 bg-cyan-200 rounded-full blur-2xl opacity-50"></motion.div>
-      <motion.div style={{ y: y2 }} className="absolute bottom-20 left-10 w-40 h-40 bg-amber-200 rounded-full blur-3xl opacity-50"></motion.div>
+      <motion.div style={{ y: y1 }} className="absolute top-20 right-10 w-32 h-32 bg-white/20 rounded-full blur-2xl opacity-50"></motion.div>
+      <motion.div style={{ y: y2 }} className="absolute bottom-20 left-10 w-40 h-40 bg-amber-300/30 rounded-full blur-3xl opacity-50"></motion.div>
       
       <div className="max-w-7xl mx-auto">
         <motion.div
@@ -46,18 +45,17 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent mb-6">
-            Meet Maymo
+          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent mb-6">
+            The Legend of the Pack
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            The internet's most beloved beagle is taking over the blockchain! Maymo has been entertaining millions 
-            for over a decade with his hilarious reactions, costume adventures, and pure canine charisma. 
-            Now it's time to bring that same joy and community spirit to the world of cryptocurrency.
+          <p className="text-xl text-slate-700 max-w-4xl mx-auto leading-relaxed">
+            What started as innocent bath time turned into an epic saga. When Indie faced a circling shark fin, 
+            she didn't know she was about to join the most legendary pack of canine warriors the internet has ever seen.
           </p>
         </motion.div>
 
-        {/* Feature grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        {/* Feature grid - NO CARDS! */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-24">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -65,16 +63,13 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
+              className="text-center p-6 rounded-2xl transition-all duration-300 hover:bg-white/30 hover:shadow-xl"
             >
-              <Card className="h-full bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-cyan-400 to-teal-400 rounded-full flex items-center justify-center">
-                    <feature.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{feature.description}</p>
-                </CardContent>
-              </Card>
+              <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-slate-800 to-slate-600 rounded-full flex items-center justify-center shadow-lg">
+                <feature.icon className="w-10 h-10 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900 mb-3">{feature.title}</h3>
+              <p className="text-slate-700 leading-relaxed">{feature.description}</p>
             </motion.div>
           ))}
         </div>
@@ -88,27 +83,31 @@ export default function AboutSection() {
           className="relative"
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative">
-              <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl bg-[#4fd1c5]">
+            <motion.div
+              whileHover={{ rotate: -3, scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 200 }} 
+              className="relative"
+            >
+              <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl bg-[#13dce4]">
                 <img 
                   src="https://easnjrwqxyzt3ols.public.blob.vercel-storage.com/channels4_banner.jpg"
                   alt="Maymo meme face"
                   className="w-full h-full object-contain"
                 />
               </div>
-
-            </div>
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full flex items-center justify-center shadow-xl animate-bounce">
+                <span className="text-2xl">🤣</span>
+              </div>
+            </motion.div>
             <div>
-              <h3 className="text-4xl font-bold text-gray-900 mb-6">
-                From YouTube Star to Crypto Icon
+              <h3 className="text-4xl font-bold text-slate-900 mb-6">
+                From Bath Time to Battle Time
               </h3>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Maymo's journey began with simple home videos that showcased his incredible personality. 
-                His expressive face, perfect timing, and natural comedic ability quickly made him an internet sensation.
+              <p className="text-lg text-slate-700 mb-6 leading-relaxed">
+                It all began when a shark interrupted Indie's bubble bath. Little did Tralalero Tralala know he was about to face the most elite pack of combat-trained dogs on the internet.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Now, we're bringing that same authenticity and joy to the crypto world. $MAYMO isn't just another 
-                memecoin – it's a celebration of the purest form of internet culture and the dog that started it all.
+              <p className="text-lg text-slate-700 leading-relaxed">
+                Now these four warriors bring their legendary chaos to Solana. $MAYMO isn't just a coin - it's your membership to the most absurdly heroic pack in crypto.
               </p>
             </div>
           </div>
