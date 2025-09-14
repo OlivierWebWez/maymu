@@ -94,7 +94,7 @@ export default function HeroSection() {
           <button className="bg-pink-500 text-white font-bold px-6 py-3 rounded-xl
     shadow-lg hover:scale-110 hover:rotate-2 transition-all duration-200 hover:bg-white hover:text-pink-500"
                  onClick={() => window.open('https://dexscreener.com/solana/5nlop9devogxhj1ape5suqsj9orff3p3z3ex2dfvaxzx', '_blank')}>
-            YOLO IN 🚀
+            Dexscreener 🚀
           </button>
 
 
