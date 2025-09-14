@@ -137,8 +137,8 @@ export default function HowToBuySection() {
             <div className="grid sm:grid-cols-2 gap-4 max-w-md mx-auto">
               <Button 
                 size="lg"
+            onClick={() => window.open('https://jup.ag/swap?sell=So11111111111111111111111111111111111111112&buy=9NBPWsCCRUbD7iQaZSCnx1uuwySrHooozb7k3mrRpump', '_blank')}
                 className="bg-slate-900 text-white hover:bg-slate-800 font-bold"
-                onClick={() => window.open('#', '_blank')}
               >
                 Deploy on Jupiter
               </Button>
@@ -146,7 +146,8 @@ export default function HowToBuySection() {
                 size="lg"
                 variant="outline"
                 className="border-slate-700 text-slate-800 hover:bg-slate-700 hover:text-white font-bold"
-                onClick={() => window.open('#', '_blank')}
+                  onClick={() => window.open('https://raydium.io/swap/?inputMint=sol&outputMint=9NBPWsCCRUbD7iQaZSCnx1uuwySrHooozb7k3mrRpump', '_blank')}
+
               >
                 Strike on Raydium
               </Button>
