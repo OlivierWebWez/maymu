@@ -38,11 +38,10 @@ export default function HeroSection() {
             $MAYMO
           </h1>
           <p className="text-2xl md:text-3xl text-slate-900 font-semibold mb-4">
-            The Pack That Protects Solana.
+             The Guinness World Record holder
           </p>
           <p className="text-lg md:text-xl text-slate-700 max-w-3xl mx-auto leading-relaxed">
-            Maymo, Penny, Potpie, and Indie - four legendary warriors who've battled sharks in sneakers, 
-            zombies, evil clowns, and other absurd villains. Now they're taking their chaos to the blockchain.
+            for the most viewed animal in the WORLD on YouTube!
           </p>
         </motion.div>
 
