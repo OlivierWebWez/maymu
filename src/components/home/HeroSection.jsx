@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Play, Star, TrendingUp, Zap } from "lucide-react";
+import {MessageCircle, Play, Star, TrendingUp, Zap} from "lucide-react";
 
 export default function HeroSection() {
   const containerVariants = {
@@ -98,38 +98,38 @@ export default function HeroSection() {
           </button>
 
 
-          <button className="bg-pink-500 text-white font-bold px-6 py-3 rounded-xl
-  shadow-lg hover:scale-110 hover:rotate-2 transition-all duration-200 hover:bg-white hover:text-pink-500"
-                  onClick={() => document.getElementById('community').scrollIntoView({behavior: 'smooth'})}
-          >
-            Join the Pack
-          </button>
-          <button className="bg-pink-500 text-white font-bold px-6 py-3 rounded-xl
-  shadow-lg hover:scale-110 hover:rotate-2 transition-all duration-200 hover:bg-white hover:text-pink-500"
-                  onClick={() => document.getElementById('about').scrollIntoView({behavior: 'smooth'})}
-          >
-            See the Chaos
+          <button  className="bg-pink-500 text-white font-bold px-6 py-3 rounded-xl
+    shadow-lg hover:scale-110 hover:rotate-2 transition-all duration-200
+    hover:bg-white hover:text-pink-500 flex items-center gap-2"
+                  onClick={() => window.open('https://t.me/Maymo_official', '_blank')}>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
+    <path d="M12 0C5.371 0 0 5.373 0 12c0 6.628 5.371 12 12 12 6.627 0 12-5.372 12-12 0-6.627-5.373-12-12-12zm4.817 8.431c-.146 1.543-.78 5.285-1.104 7.006-.137.73-.406.973-.667.996-.567.052-1-.375-1.55-.734-.862-.565-1.348-.916-2.187-1.463-.968-.625-.34-.968.214-1.528.146-.146 2.627-2.409 2.674-2.615.006-.025.011-.119-.044-.169-.054-.051-.133-.033-.19-.019-.081.019-1.363.865-3.854 2.556-.365.25-.694.372-.987.366-.324-.007-.949-.183-1.413-.334-.57-.186-1.024-.283-.985-.598.021-.171.258-.346.712-.525 2.79-1.212 4.651-2.012 5.582-2.396 2.662-1.104 3.215-1.297 3.575-1.303.079-.002.256.018.37.108.097.078.124.183.136.257.012.074.027.218.016.337z"/>
+  </svg>
+  Join Telegram
+
           </button>
 
 
         </motion.div>
 
         {/* Stats row */}
+         {/* Stats row */}
         <motion.div
-            variants={itemVariants}
-            className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto"
+          variants={itemVariants}
+          className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto"
         >
-        <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-slate-900">∞</div>
-            <div className="text-slate-700 font-medium">Sharks Defeated</div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-cyan-600">5.6B+</div>
+            <div className="text-gray-600 font-medium">YouTube Views</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-amber-600">999+</div>
-            <div className="text-slate-700 font-medium">Zombies Eliminated</div>
+            <div className="text-3xl md:text-4xl font-bold text-amber-600">12M+</div>
+            <div className="text-gray-600 font-medium">Subscribers</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-slate-900">4</div>
-            <div className="text-slate-700 font-medium">Elite Warriors</div>
+            <div className="text-3xl md:text-4xl font-bold text-teal-600">19+</div>
+            <div className="text-gray-600 font-medium">Years Fame</div>
           </div>
         </motion.div>
       </motion.div>

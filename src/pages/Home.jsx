@@ -47,7 +47,6 @@ export default function HomePage() {
       <HeroSection />
       <AboutSection />
       <GallerySection />
-      <CommunitySection />
       <HowToBuySection />
 
       {/* Floating action button */}
