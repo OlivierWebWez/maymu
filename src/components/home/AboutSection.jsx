@@ -23,11 +23,6 @@ const features = [
     icon: Users,
     title: "Community Power",
     description: "Fueled by one of the biggest Facebook groups in the space. Viral growth baked in from day one."
-  },
-  {
-    icon: Zap,
-    title: "Memeconomics",
-    description: "$MAYMO isn’t just a coin — it’s your membership card into the most absurdly powerful meme movement on Solana."
   }
 ];
 
