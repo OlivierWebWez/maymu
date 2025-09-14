@@ -18,7 +18,7 @@ export default function CommunitySection() {
       icon: MessageCircle,
       handle: "Pack Command Center",
       color: "hover:bg-white/20 text-slate-800",
-      link: "#"
+      link: "https://t.me/Maymo_official"
     },
     // {
     //   platform: "Discord",

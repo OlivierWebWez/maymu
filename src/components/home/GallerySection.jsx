@@ -123,30 +123,30 @@ const galleryItems = [
         </div>
 
         {/* Call to action */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mt-16"
-        >
-          <div className="bg-white/30 border border-slate-300 backdrop-blur-sm shadow-xl max-w-2xl mx-auto rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">
-                Ready to Join the Pack?
-              </h3>
-              <p className="text-slate-700 mb-6">
-                Share your favorite warrior moments and battle strategies using #MAYMOPACK
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button className="bg-slate-900 text-white hover:bg-slate-800">
-                  Report for Duty
-                </Button>
-                <Button variant="outline" className="border-slate-700 text-slate-800 hover:bg-slate-700 hover:text-white">
-                  Join the Mission
-                </Button>
-              </div>
-          </div>
-        </motion.div>
+        {/*<motion.div*/}
+        {/*  initial={{ opacity: 0, y: 30 }}*/}
+        {/*  whileInView={{ opacity: 1, y: 0 }}*/}
+        {/*  transition={{ duration: 0.6 }}*/}
+        {/*  viewport={{ once: true }}*/}
+        {/*  className="text-center mt-16"*/}
+        {/*>*/}
+        {/*  <div className="bg-white/30 border border-slate-300 backdrop-blur-sm shadow-xl max-w-2xl mx-auto rounded-2xl p-8">*/}
+        {/*      <h3 className="text-2xl font-bold text-slate-900 mb-4">*/}
+        {/*        Ready to Join the Pack?*/}
+        {/*      </h3>*/}
+        {/*      <p className="text-slate-700 mb-6">*/}
+        {/*        Share your favorite warrior moments and battle strategies using #MAYMOPACK*/}
+        {/*      </p>*/}
+        {/*      <div className="flex flex-col sm:flex-row gap-4 justify-center">*/}
+        {/*        <Button className="bg-slate-900 text-white hover:bg-slate-800">*/}
+        {/*          Report for Duty*/}
+        {/*        </Button>*/}
+        {/*        <Button variant="outline" className="border-slate-700 text-slate-800 hover:bg-slate-700 hover:text-white">*/}
+        {/*          Join the Mission*/}
+        {/*        </Button>*/}
+        {/*      </div>*/}
+        {/*  </div>*/}
+        {/*</motion.div>*/}
       </div>
     </section>
   );
