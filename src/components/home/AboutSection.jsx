@@ -53,7 +53,7 @@ const features = [
         </motion.div>
 
         {/* Feature grid - NO CARDS! */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-24">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mb-24">
           {features.map((feature, index) => (
               <motion.div
                   key={index}
