@@ -70,25 +70,29 @@ export default function HowToBuySection() {
         >
           <div className="bg-white/30 backdrop-blur-sm border border-slate-300 rounded-2xl shadow-xl p-8 text-center">
               <h3 className="text-xl font-bold text-slate-900 mb-4">Contract Address</h3>
-              <div className="flex items-center justify-between bg-slate-100 rounded-lg p-4 shadow-inner">
-                <code className="text-sm font-mono text-slate-800 flex-1 overflow-x-auto">
-                  {contractAddress}
-                </code>
-                <Button
+            <div className="flex items-center justify-between bg-slate-100 rounded-lg p-4 shadow-inner">
+                 <code className="text-sm font-mono text-slate-800 flex-1 overflow-x-auto  sm:hidden">
+                {contractAddress.slice(0, 8)}...{contractAddress.slice(-8)}
+              </code>
+              <code className="hidden sm:block text-sm font-mono text-slate-800 flex-1 overflow-x-auto">
+                {contractAddress}
+              </code>
+              <Button
                   variant="ghost"
                   size="icon"
                   onClick={handleCopy}
                   className="ml-2 text-slate-700 hover:bg-slate-200"
-                >
-                  {copied ? (
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                  ) : (
-                    <Copy className="w-4 h-4" />
-                  )}
-                </Button>
-              </div>
-              <Badge className="mt-4 border-amber-600 text-amber-800 bg-amber-100 hover:text-amber-100 hover:bg-amber-800">
-                Always verify contract address
+              >
+                {copied ? (
+                    <CheckCircle className="w-4 h-4 text-green-600"/>
+                ) : (
+                    <Copy className="w-4 h-4"/>
+                )}
+              </Button>
+            </div>
+            <Badge
+                className="mt-4 border-amber-600 text-amber-800 bg-amber-100 hover:text-amber-100 hover:bg-amber-800">
+              Always verify contract address
               </Badge>
           </div>
         </motion.div>
