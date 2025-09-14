@@ -91,14 +91,12 @@ export default function AboutSection() {
             <div className="relative">
               <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl bg-[#4fd1c5]">
                 <img 
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68c5d43b3c70f456453c8e78/645d6a99e_channels4_banner.jpg"
+                  src="https://easnjrwqxyzt3ols.public.blob.vercel-storage.com/channels4_banner.jpg"
                   alt="Maymo meme face"
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full flex items-center justify-center shadow-xl">
-                <span className="text-2xl">🐕</span>
-              </div>
+
             </div>
             <div>
               <h3 className="text-4xl font-bold text-gray-900 mb-6">

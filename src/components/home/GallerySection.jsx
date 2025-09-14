@@ -10,42 +10,23 @@ export default function GallerySection() {
     {
       type: "video",
       thumbnail: "https://img.youtube.com/vi/3Ut6pkqVMcQ/hqdefault.jpg",
-      title: "Maymo vs 1000 Ball Pit Balls",
+      title: "Dogs Find Shark in Sneakers in Woods",
       link: "https://youtu.be/3Ut6pkqVMcQ?si=X3foynPNeeyAoY2g",
-      views: "15M+ views",
-    },
-    {
-      type: "image",
-      thumbnail: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68c5d43b3c70f456453c8e78/1d3ebbeac_465910380_9325785784101604_6934639663010775355_n.jpg",
-      title: "Maymo The Panda",
-      likes: "Top Tier Meme",
+      views: "200K+ views",
     },
     {
       type: "video",
       thumbnail: "https://img.youtube.com/vi/qpI_ehXelxA/hqdefault.jpg",
-      title: "Ultimate Dog vs. Lemon",
+      title: "Cute Dogs Knocking People Out Vol. V",
       link: "https://youtu.be/qpI_ehXelxA?si=-HKmoc-0Kn6W8mUY",
-      views: "10M+ views",
+      views: "80K+ views",
     },
     {
       type: "video",
       thumbnail: "https://img.youtube.com/vi/3ufaSiB1KDM/hqdefault.jpg",
-      title: "Dog with Amazing Balance",
+      title: "Dogs Find John Pork in Creepy Barn!",
       link: "https://youtu.be/3ufaSiB1KDM?si=PyEfBE6EAL58dfOV",
-      views: "2M+ views",
-    },
-    {
-      type: "image",
-      thumbnail: "https://img.youtube.com/vi/O_Fp3bi832s/hqdefault.jpg",
-      title: "Maymo the Ghost Hunter",
-      likes: "Spooky Season",
-    },
-    {
-      type: "image",
-      thumbnail: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68c5d43b3c70f456453c8e78/645d6a99e_channels4_banner.jpg",
-      title: "The OG Meme Face",
-      likes: "Iconic",
-      style: { objectFit: 'contain', padding: '1rem', backgroundColor: '#4fd1c5' }
+      views: "1.4M+ views",
     }
   ];
 

@@ -127,13 +127,13 @@ export default function CommunitySection() {
                     Join Telegram
                   </Button>
                 </a>
-                <Button 
-                  size="lg"
-                  variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-teal-600 px-8 py-4"
-                >
-                  Follow on Twitter
-                </Button>
+                {/*<Button */}
+                {/*  size="lg"*/}
+                {/*  variant="outline"*/}
+                {/*  className="border-white text-white hover:bg-white hover:text-teal-600 px-8 py-4"*/}
+                {/*>*/}
+                {/*  Follow on Twitter*/}
+                {/*</Button>*/}
               </div>
             </CardContent>
           </Card>

@@ -60,7 +60,9 @@ export default function HeroSection() {
             The Internet's Favorite Beagle
           </p>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            From YouTube stardom to Solana blockchain! Join the Maymo revolution and be part of the most adorable memecoin community ever created.
+            From YouTube stardom to Solana blockchain.<br/> Join the Maymo revolution and be part of the most adorable
+            memecoin community ever created — backed by the Guinness World Record holder for the most viewed animal in
+            the world on YouTube.
           </p>
         </motion.div>
 
@@ -71,7 +73,7 @@ export default function HeroSection() {
         >
           <div className="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full bg-gradient-to-br from-cyan-200 via-amber-200 to-slate-200 flex items-center justify-center relative overflow-hidden shadow-2xl">
             <img 
-              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68c5d43b3c70f456453c8e78/1d3ebbeac_465910380_9325785784101604_6934639663010775355_n.jpg"
+              src="https://easnjrwqxyzt3ols.public.blob.vercel-storage.com/465910380_9325785784101604_6934639663010775355_n.jpg"
               alt="Maymo the Beagle in a Panda Costume"
               className="w-full h-full object-cover rounded-full"
             />
@@ -128,15 +130,15 @@ export default function HeroSection() {
           className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto"
         >
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-cyan-600">2.3M+</div>
+            <div className="text-3xl md:text-4xl font-bold text-cyan-600">5.6B+</div>
             <div className="text-gray-600 font-medium">YouTube Views</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-amber-600">500K+</div>
+            <div className="text-3xl md:text-4xl font-bold text-amber-600">12M+</div>
             <div className="text-gray-600 font-medium">Subscribers</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-teal-600">10+</div>
+            <div className="text-3xl md:text-4xl font-bold text-teal-600">19+</div>
             <div className="text-gray-600 font-medium">Years Fame</div>
           </div>
         </motion.div>

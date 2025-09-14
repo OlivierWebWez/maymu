@@ -8,7 +8,7 @@ import { Copy, CheckCircle, Wallet, ArrowRight, Shield, Zap } from "lucide-react
 
 export default function HowToBuySection() {
   const [copied, setCopied] = useState(false);
-  const contractAddress = "Coming Soon";
+  const contractAddress = "9NBPWsCCRUbD7iQaZSCnx1uuwySrHooozb7k3mrRpump";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(contractAddress);
@@ -90,7 +90,7 @@ export default function HowToBuySection() {
                   )}
                 </Button>
               </div>
-              <Badge className="mt-4 bg-amber-200 text-amber-800 border-amber-300">
+              <Badge className="mt-4 bg-amber-200 text-amber-800 border-amber-300 hover:bg-amber-200 hover:text-amber-800 ">
                 Always verify contract address
               </Badge>
             </CardContent>
@@ -139,16 +139,17 @@ export default function HowToBuySection() {
               <div className="grid sm:grid-cols-2 gap-4 max-w-md mx-auto">
                 <Button 
                   size="lg"
+                  variant="outline"
                   className="bg-white text-teal-600 hover:bg-gray-100 font-bold"
-                  onClick={() => window.open('#', '_blank')}
+                  onClick={() => window.open('https://jup.ag/swap?sell=So11111111111111111111111111111111111111112&buy=9NBPWsCCRUbD7iQaZSCnx1uuwySrHooozb7k3mrRpump', '_blank')}
                 >
                   Buy on Jupiter
                 </Button>
                 <Button 
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-teal-600 font-bold"
-                  onClick={() => window.open('#', '_blank')}
+                  className="bg-white text-teal-600 hover:bg-gray-100 font-bold"
+                  onClick={() => window.open('https://raydium.io/swap/?inputMint=sol&outputMint=9NBPWsCCRUbD7iQaZSCnx1uuwySrHooozb7k3mrRpump', '_blank')}
                 >
                   Buy on Raydium
                 </Button>
