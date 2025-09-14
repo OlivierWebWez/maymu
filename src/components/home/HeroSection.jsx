@@ -37,15 +37,15 @@ export default function HeroSection() {
           variants={itemVariants}
           className="flex justify-center gap-4 mb-8 flex-wrap"
         >
-          <Badge className="bg-amber-100 text-amber-800 border-amber-300 px-4 py-2 text-sm">
+          <Badge className="bg-amber-100 text-amber-800 border-amber-300 px-4 py-2 text-sm hover:bg-amber-100 hover:text-amber-800">
             <Star className="w-4 h-4 mr-2" />
             YouTube Legend
           </Badge>
-          <Badge className="bg-cyan-100 text-cyan-800 border-cyan-300 px-4 py-2 text-sm">
+          <Badge className="bg-cyan-100 text-cyan-800 border-cyan-300 px-4 py-2 text-sm hover:bg-cyan-100 hover:text-cyan-800">
             <TrendingUp className="w-4 h-4 mr-2" />
             Solana Memecoin
           </Badge>
-          <Badge className="bg-slate-100 text-slate-800 border-slate-300 px-4 py-2 text-sm">
+          <Badge className="bg-slate-100 text-slate-800 border-slate-300 px-4 py-2 text-sm hover:bg-slate-100 hover:text-slate-800">
             <Zap className="w-4 h-4 mr-2" />
             Community Driven
           </Badge>
