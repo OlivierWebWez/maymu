@@ -8,28 +8,29 @@ export default function AboutSection() {
   const y1 = useTransform(scrollY, [0, 1000], [0, -100]);
   const y2 = useTransform(scrollY, [0, 1000], [0, 100]);
 
-  const features = [
-    {
-      icon: Heart,
-      title: "The Elite Squad",
-      description: "Maymo, Penny, Potpie, and Indie - four legendary warriors who've mastered the art of comedic combat."
-    },
-    {
-      icon: Award,
-      title: "Combat Specialists", 
-      description: "From toilet plungers to cream pies, these dogs wield unconventional weapons with deadly precision."
-    },
-    {
-      icon: Users,
-      title: "Villain Vanquishers",
-      description: "They've taken down sharks in sneakers, zombies, evil clowns, and other absurd threats to society."
-    },
-    {
-      icon: Zap,
-      title: "Chaos Creators",
-      description: "Masters of turning everyday situations into epic adventures filled with mayhem and memes."
-    }
-  ];
+const features = [
+  {
+    icon: Heart,
+    title: "Proven Track Record",
+    description: "The dev’s last project, Tema (a raccoon), hit a massive $65M market cap. Experience matters in meme wars."
+  },
+  {
+    icon: Award,
+    title: "Whale Backing",
+    description: "Endorsed by a top whale group, bringing serious liquidity and credibility into the chaos."
+  },
+  {
+    icon: Users,
+    title: "Community Power",
+    description: "Fueled by one of the biggest Facebook groups in the space. Viral growth baked in from day one."
+  },
+  {
+    icon: Zap,
+    title: "Memeconomics",
+    description: "$MAYMO isn’t just a coin — it’s your membership card into the most absurdly powerful meme movement on Solana."
+  }
+];
+
 
   return (
     <section id="about" className="py-20 px-4 relative">
@@ -39,31 +40,33 @@ export default function AboutSection() {
       
       <div className="max-w-7xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
+            initial={{opacity: 0, y: 50}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{duration: 0.6}}
+            viewport={{once: true}}
+            className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent mb-6">
-            The Legend of the Pack
+            Why $MAYMO Hits Different
           </h2>
           <p className="text-xl text-slate-700 max-w-4xl mx-auto leading-relaxed">
-            What started as innocent bath time turned into an epic saga. When Indie faced a circling shark fin, 
-            she didn't know she was about to join the most legendary pack of canine warriors the internet has ever seen.
+            Forget the boring whitepapers and overhyped promises. $MAYMO is backed by real wins, whale endorsements, and
+            a massive social machine that knows how to go viral. This isn’t just another dog coin — it’s the next
+            chapter in memecoin history.
           </p>
+
         </motion.div>
 
         {/* Feature grid - NO CARDS! */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-24">
           {features.map((feature, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="text-center p-6 rounded-2xl transition-all duration-300 hover:bg-white/30 hover:shadow-xl"
+              <motion.div
+                  key={index}
+                  initial={{opacity: 0, y: 30}}
+                  whileInView={{opacity: 1, y: 0}}
+                  transition={{duration: 0.5, delay: index * 0.1}}
+                  viewport={{once: true}}
+                  className="text-center p-6 rounded-2xl transition-all duration-300 hover:bg-white/30 hover:shadow-xl"
             >
               <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-slate-800 to-slate-600 rounded-full flex items-center justify-center shadow-lg">
                 <feature.icon className="w-10 h-10 text-white" />
@@ -99,14 +102,17 @@ export default function AboutSection() {
             </motion.div>
             <div>
               <h3 className="text-4xl font-bold text-slate-900 mb-6">
-                From Bath Time to Battle Time
+                From Meme to Market Momentum
               </h3>
               <p className="text-lg text-slate-700 mb-6 leading-relaxed">
-                It all began when a shark interrupted Indie's bubble bath. Little did Tralalero Tralala know he was about to face the most elite pack of combat-trained dogs on the internet.
+                Tema (a raccoon) showed the dev could deliver, reaching $65M MC. Now the same chaos energy powers
+                $MAYMO, with whales and one of the largest Facebook communities driving it forward.
               </p>
               <p className="text-lg text-slate-700 leading-relaxed">
-                Now these four warriors bring their legendary chaos to Solana. $MAYMO isn't just a coin - it's your membership to the most absurdly heroic pack in crypto.
+                $MAYMO is more than a token — it’s a movement. Get in early, ride the memes, and let’s write the next
+                absurd success story together.
               </p>
+
             </div>
           </div>
         </motion.div>
