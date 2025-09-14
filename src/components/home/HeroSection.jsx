@@ -111,6 +111,7 @@ export default function HeroSection() {
           <Button 
             size="lg" 
             className="bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-600 hover:to-teal-600 text-white font-bold px-8 py-4 text-lg rounded-full shadow-xl transform transition-all duration-200 hover:scale-105"
+          onClick={() => document.getElementById('buy').scrollIntoView({ behavior: 'smooth' })}
           >
             Buy $MAYMO Now
           </Button>
