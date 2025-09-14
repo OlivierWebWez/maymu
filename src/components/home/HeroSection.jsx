@@ -32,25 +32,6 @@ export default function HeroSection() {
         animate="visible"
         className="max-w-6xl mx-auto text-center relative z-10"
       >
-        {/* Floating badges */}
-        <motion.div 
-          variants={itemVariants}
-          className="flex justify-center gap-4 mb-8 flex-wrap"
-        >
-          <Badge className="bg-white text-slate-800 border-slate-300 px-4 py-2 text-sm shadow-lg hover:bg-white hover:text-slate-800">
-            <Star className="w-4 h-4 mr-2" />
-            Combat-Trained Pack
-          </Badge>
-          <Badge className="bg-amber-100 text-amber-800 border-amber-300 px-4 py-2 text-sm shadow-lg hover:bg-amber-100 hover:text-amber-800">
-            <TrendingUp className="w-4 h-4 mr-2" />
-            Shark-Fighting Champions
-          </Badge>
-          <Badge className="bg-slate-900 text-white border-slate-700 px-4 py-2 text-sm shadow-lg hover:bg-slate-900 hover:text-white">
-            <Zap className="w-4 h-4 mr-2" />
-            Zombie Slayers
-          </Badge>
-        </motion.div>
-
         {/* Main hero content */}
         <motion.div variants={itemVariants} className="mb-8">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-slate-900 via-slate-700 to-amber-600 bg-clip-text text-transparent leading-tight">
