@@ -156,3 +156,28 @@ button:focus-visible {
     @apply bg-background text-foreground;
   }
 }
+
+:root {
+  --font-heading: 'Luckiest Guy', cursive;
+  --font-body: 'Fredoka One', sans-serif;
+}
+
+h1, h2, h3, .hero-title {
+  font-family: var(--font-heading);
+}
+
+body, p, span {
+  font-family: var(--font-body);
+}
+
+.hero {
+  background: linear-gradient(135deg, #ff00ff, #00ffff, #ffff00);
+  background-size: 600% 600%;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

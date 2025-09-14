@@ -138,14 +138,16 @@ export default function HowToBuySection() {
               <Button 
                 size="lg"
             onClick={() => window.open('https://jup.ag/swap?sell=So11111111111111111111111111111111111111112&buy=9NBPWsCCRUbD7iQaZSCnx1uuwySrHooozb7k3mrRpump', '_blank')}
-                className="bg-slate-900 text-white hover:bg-slate-800 font-bold"
+               className="bg-pink-500 text-white font-bold px-6 py-3 rounded-xl
+  shadow-lg hover:scale-110 hover:rotate-2 transition-all duration-200 hover:bg-white hover:text-pink-500"
               >
                 Deploy on Jupiter
               </Button>
               <Button 
                 size="lg"
                 variant="outline"
-                className="border-slate-700 text-slate-800 hover:bg-slate-700 hover:text-white font-bold"
+                className="bg-pink-500 text-white font-bold px-6 py-3 rounded-xl
+  shadow-lg hover:scale-110 hover:rotate-2 transition-all duration-200 hover:bg-white hover:text-pink-500"
                   onClick={() => window.open('https://raydium.io/swap/?inputMint=sol&outputMint=9NBPWsCCRUbD7iQaZSCnx1uuwySrHooozb7k3mrRpump', '_blank')}
 
               >

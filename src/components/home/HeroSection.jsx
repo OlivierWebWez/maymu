@@ -24,7 +24,7 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
       {/* Hero background glow */}
-      <div className="absolute inset-0  blur-3xl"></div>
+      <div className="hero absolute inset-0  blur-3xl"></div>
       
       <motion.div 
         variants={containerVariants}
@@ -83,55 +83,62 @@ export default function HeroSection() {
           
           {/* Floating play button */}
           <motion.div
-            animate={{ 
-              y: [0, -10, 0],
-              rotate: [0, 5, -5, 0]
-            }}
-            transition={{ 
-              duration: 3,
-              repeat: Infinity,
-              repeatType: "reverse"
-            }}
-            className="absolute -bottom-4 -right-4"
+              animate={{
+                y: [0, -10, 0],
+                rotate: [0, 5, -5, 0]
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                repeatType: "reverse"
+              }}
+              className="absolute -bottom-4 -right-4"
           >
-            <Button 
-              size="icon" 
-              className="w-16 h-16 rounded-full bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 shadow-xl"
-              onClick={() => window.open('https://www.youtube.com/channel/UCC7tqA6lA2QRw4BdrAEKFxg', '_blank')}
+
+            <Button
+                size="icon"
+                className="w-16 h-16 rounded-full bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 shadow-xl"
+                onClick={() => window.open('https://www.youtube.com/channel/UCC7tqA6lA2QRw4BdrAEKFxg', '_blank')}
             >
-              <Play className="w-8 h-8 ml-1" />
+              <Play className="w-8 h-8 ml-1"/>
             </Button>
           </motion.div>
         </motion.div>
 
         {/* CTA buttons */}
-        <motion.div 
-          variants={itemVariants}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+        <motion.div
+            variants={itemVariants}
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <Button 
-            size="lg" 
-            className="bg-slate-900 hover:bg-slate-800 text-white font-bold px-8 py-4 text-lg rounded-full shadow-xl transform transition-all duration-200 hover:scale-105"
-            onClick={() => document.getElementById('community').scrollIntoView({ behavior: 'smooth' })}
+          <button className="bg-pink-500 text-white font-bold px-6 py-3 rounded-xl
+    shadow-lg hover:scale-110 hover:rotate-2 transition-all duration-200 hover:bg-white hover:text-pink-500"
+                 onClick={() => window.open('https://dexscreener.com/solana/5nlop9devogxhj1ape5suqsj9orff3p3z3ex2dfvaxzx', '_blank')}>
+            YOLO IN 🚀
+          </button>
+
+
+          <button className="bg-pink-500 text-white font-bold px-6 py-3 rounded-xl
+  shadow-lg hover:scale-110 hover:rotate-2 transition-all duration-200 hover:bg-white hover:text-pink-500"
+                  onClick={() => document.getElementById('community').scrollIntoView({behavior: 'smooth'})}
           >
             Join the Pack
-          </Button>
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="border-2 border-slate-700 text-slate-800 hover:bg-slate-700 hover:text-white backdrop-blur-sm font-semibold px-8 py-4 text-lg rounded-full shadow-lg"
-            onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
+          </button>
+          <button className="bg-pink-500 text-white font-bold px-6 py-3 rounded-xl
+  shadow-lg hover:scale-110 hover:rotate-2 transition-all duration-200 hover:bg-white hover:text-pink-500"
+                  onClick={() => document.getElementById('about').scrollIntoView({behavior: 'smooth'})}
           >
             See the Chaos
-          </Button>
+          </button>
+
+
         </motion.div>
 
         {/* Stats row */}
-        <motion.div 
-          variants={itemVariants}
-          className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto"
+        <motion.div
+            variants={itemVariants}
+            className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto"
         >
-          <div className="text-center">
+        <div className="text-center">
             <div className="text-3xl md:text-4xl font-bold text-slate-900">∞</div>
             <div className="text-slate-700 font-medium">Sharks Defeated</div>
           </div>
